@@ -1,0 +1,27 @@
+# Project Information
+site_name: Equation number testing
+site_description: 'Equation number testing'
+site_author: 'Kyle Barron'
+
+docs_dir: 'src'
+site_dir: 'site'
+
+# Layout
+nav:
+    - Home: 'index.md'
+    - Eq numbers work: 'eqnos_work.md'
+
+# Theme
+theme:
+    name: 'material'
+    language: 'en'
+    palette:
+        primary: 'orange'
+        accent:  'light blue'
+
+extra_javascript:
+    - mathjax.js
+    - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+
+markdown_extensions:
+    - pymdownx.arithmatex
